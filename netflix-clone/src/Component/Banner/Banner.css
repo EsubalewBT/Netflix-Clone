@@ -6,22 +6,30 @@
 	object-fit: contain;
 }
 .banner_contents {
-	margin-left: 30px;
-	padding-top: 300px;
-	/* height: 190px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    padding-top: 200px; /* Adjust padding to prevent overlap */
 }
 .banner_title {
-	font-size: 3rem;
-	font-weight: 800;
-	padding-bottom: 0.3rem;
+	font-size: 2.5rem; /* Slightly reduce the font size */
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    line-height: 1.2; /* Adjust line height to reduce vertical spacing */
+    max-width: 60%; /* Limit the width to prevent it from taking too much space */
+    overflow: hidden; /* Prevent text overflow */
+    text-overflow: ellipsis; /* Add ellipsis for long titles */
+    white-space: nowrap
 }
 .banner_description {
-	width: 45rem;
-	line-height: 1;
-	padding: 1rem 0;
-	font-size: 1rem;
-	max-width: 360px;
-	height: 80px;
+    width: 100%; /* Allow it to take full width */
+    max-width: 45rem;
+    line-height: 1.5; /* Increase line height for better readability */
+    padding: 1rem 0;
+    font-size: 1rem;
+    height: auto; /* Remove fixed height to allow dynamic content */
 }
 .banner_button {
 	cursor: pointer;

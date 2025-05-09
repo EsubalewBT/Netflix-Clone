@@ -17,7 +17,7 @@ function Banner() {
           ]
         );
       } catch (error) {
-        console.log(error);
+        console.log(error.message);
       }
     })(); // Immediately Invoked Function Expression (IIFE)
   }, []);
@@ -37,7 +37,7 @@ function Banner() {
   >
     <div className="banner_contents">
       <h1 className="banner_title">
-        {movie?.title || movie?.original_title}
+        {movie?.name || movie?.original_name}
       </h1>
       <div className="banner_buttons">
         <button className="banner_button play">Plays</button>
